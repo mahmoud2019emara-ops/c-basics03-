@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Text;
 
 namespace ass02
 {
@@ -18,11 +19,19 @@ namespace ass02
             #region question 2
             //Declare two separate string variables, both set to the literal "Clean Code".Use ReferenceEquals()
             //to check if they point to the same object in memory.
-            string title01 = "Clean Code";
-            string title02 = "Clean Code";
-            Console.WriteLine(ReferenceEquals(title01, title02));
+            //string title01 = "Clean Code";
+            //string title02 = "Clean Code";
+            //Console.WriteLine(ReferenceEquals(title01, title02));
             #endregion
 
+            #region question 3
+            //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+            // object.Print the final result.
+             StringBuilder sb = new StringBuilder();
+            sb.Append("book list");
+            sb.Append(" - Updated");
+            Console.WriteLine(sb);
+            #endregion
         }
     }
 }
