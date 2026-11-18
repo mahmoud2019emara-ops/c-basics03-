@@ -81,11 +81,27 @@ namespace ass02
             #region question 9
             //Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
             //  greater than 300 and isAvailable is true.Use the && operator.
-            int pages = 464;
-            bool isAvailable = true;
-            if(pages>300 && isAvailable == true)
-             Console.WriteLine("You can borrow this book");
-            
+            //int pages = 464;
+            //bool isAvailable = true;
+            //if(pages>300 && isAvailable == true)
+            // Console.WriteLine("You can borrow this book");
+
+            #endregion
+            #region question 10
+
+            string title = "Refactoring";
+            switch(title)
+            {
+                case "clean code":
+                    Console.WriteLine("great choice");
+                    break;
+                case "Refactoring":
+                    Console.WriteLine("nice pick");
+                    break;
+                default:
+                    Console.WriteLine("never heard of it");
+                    break;
+            }
             #endregion
 
         }
