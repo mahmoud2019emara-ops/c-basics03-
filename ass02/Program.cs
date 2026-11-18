@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ass02
 {
@@ -87,6 +88,7 @@ namespace ass02
             // Console.WriteLine("You can borrow this book");
 
             #endregion
+
             #region question 10
             //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
             // "Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else.
@@ -104,14 +106,26 @@ namespace ass02
             //        break;
             //}
             #endregion
+
             #region question 11
             //Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a
             //  variable sizeLabel(same rule as question 8: long if pages > 300).
 
-            int pages = 464;
-            string sizeLabel = (pages > 300) ? "Long Book" : "Short Book";
-            Console.WriteLine(sizeLabel);
+            //int pages = 464;
+            //string sizeLabel = (pages > 300) ? "Long Book" : "Short Book";
+            //Console.WriteLine(sizeLabel);
 
+            #endregion
+
+            #region question 12
+            //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
+            // to print each book with its position number, like 1.Clean Code.
+
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            for (int i=0 ; i<books.Length ; i++) 
+            {
+                Console.WriteLine($"{i + 1}.{books[i]}");
+            }
             #endregion
 
         }
