@@ -183,17 +183,35 @@ namespace ass02
 
             #region question 17
 
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach (string i in books)
+            //{ 
+            //    if (i == "The Pragmatic Programmer")
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+            #endregion
+
+            #region question 18
+            //Write a method PrintFirstBook() that prints the first book in the books array.If the array is empty,
+            //use return to exit the method early instead of printing anything.
+            
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            foreach (string i in books)
-            { 
-                if (i == "The Pragmatic Programmer")
+            void PrintFirstBook(string[] books)
+            {
+                
+                if (books == null || books.Length == 0)
                 {
-                    continue;
+                    return;
                 }
-                Console.WriteLine(i);
+
+               
+                Console.WriteLine(books[0]);
             }
             #endregion
-       
+
         }
     }
 }
