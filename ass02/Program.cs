@@ -63,9 +63,19 @@ namespace ass02
 
             #region question 7
             //Build the same sentence again, but using string.Format().
-            string title = "clean code";
+            //string title = "clean code";
+            //int pages = 464;
+            //console.writeline(string.format("book:{0}, pages: {1}", title, pages));
+            #endregion
+
+            #region question 8
+            //Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+            //   300, otherwise prints "Short Book".
             int pages = 464;
-            console.writeline(string.format("book:{0}, pages: {1}", title, pages));
+            if(pages>300)
+                Console.WriteLine("long Book");
+            else
+                Console.WriteLine("short Book");
             #endregion
 
         }
