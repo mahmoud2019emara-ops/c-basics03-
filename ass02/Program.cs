@@ -170,16 +170,30 @@ namespace ass02
             // you reach "Refactoring".
 
             //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            foreach (string i in books)
-            {
-                Console.WriteLine(i);
-                if (i == "Refactoring")
-                {
-                    break;
-                }
-            }
+            //foreach (string i in books)
+            //{
+            //    Console.WriteLine(i);
+            //    if (i == "Refactoring")
+            //    {
+            //        break;
+            //    }
+            //}
 
             #endregion
+
+            #region question 17
+
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            foreach (string i in books)
+            { 
+                if (i == "The Pragmatic Programmer")
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
+            }
+            #endregion
+       
         }
     }
 }
