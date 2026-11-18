@@ -56,9 +56,16 @@ namespace ass02
 
             #region question 6
             //Build the same sentence as above, but using string interpolation ($"...").
-            string title = "Clean Code";
+            //string title = "Clean Code";
+            //int pages = 464;
+            //Console.WriteLine($"book:{title}, Pages: {pages}");
+            #endregion
+
+            #region question 7
+            //Build the same sentence again, but using string.Format().
+            string title = "clean code";
             int pages = 464;
-            Console.WriteLine($"book:{title}, Pages: {pages}");
+            console.writeline(string.format("book:{0}, pages: {1}", title, pages));
             #endregion
 
         }
