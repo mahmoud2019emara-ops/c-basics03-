@@ -143,15 +143,42 @@ namespace ass02
 
             #region question 14
             //Write a do -while loop that prints "Checking book..." exactly 3 times.
-            
+
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //int i = 0;
+            //do
+            //{
+            //    Console.WriteLine("checking book...");
+            //    i++;
+            //} 
+            //while (i > 3);
+            #endregion
+
+            #region question 15
+            //Using the same books array, use a foreach loop to print every book title.
+
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            int i = 0;
-            do
+            foreach (string i in books)
             {
-                Console.WriteLine("checking book...");
-                i++;
-            } 
-            while (i > 3);
+                Console.WriteLine(i);
+            }
+            #endregion
+
+            #region question 16
+
+            //Using the same books array, loop through it and print each title, but stop completely(break) once
+            // you reach "Refactoring".
+
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach (string i in books)
+            //{
+            //    Console.WriteLine(i);
+            //    if (i == "Refactoring")
+            //    {
+            //        break;
+            //    }
+            //}
+
             #endregion
         }
     }
