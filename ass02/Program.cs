@@ -51,8 +51,16 @@ namespace ass02
             //  Pages: 464" using the + operator.
             string title = "Clean Code";
             int pages = 464;
-            Console.WriteLine($"book:{title}, Pages: {pages}");
+            Console.WriteLine("book:" + title + ", Pages: " + pages);
             #endregion
+
+            #region question 6
+            //Build the same sentence as above, but using string interpolation ($"...").
+            //string title = "Clean Code";
+            //int pages = 464;
+            //Console.WriteLine("book:" + title + ", Pages: " + pages);
+            #endregion
+
         }
     }
 }
