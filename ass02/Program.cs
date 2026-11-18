@@ -157,11 +157,11 @@ namespace ass02
             #region question 15
             //Using the same books array, use a foreach loop to print every book title.
 
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            foreach (string i in books)
-            {
-                Console.WriteLine(i);
-            }
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach (string i in books)
+            //{
+            //    Console.WriteLine(i);
+            //}
             #endregion
 
             #region question 16
@@ -170,14 +170,14 @@ namespace ass02
             // you reach "Refactoring".
 
             //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            //foreach (string i in books)
-            //{
-            //    Console.WriteLine(i);
-            //    if (i == "Refactoring")
-            //    {
-            //        break;
-            //    }
-            //}
+            foreach (string i in books)
+            {
+                Console.WriteLine(i);
+                if (i == "Refactoring")
+                {
+                    break;
+                }
+            }
 
             #endregion
         }
